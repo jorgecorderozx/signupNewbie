@@ -1,5 +1,99 @@
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-size: 16px;
+    font-family: Poppins, "sans serif";
+    background: var(--red) url(images/bg-intro-mobile.png) fixed;
+    height: 100vh;
+}
+
+main {
+    padding: 5rem 1.5rem;
+    gap: 1rem;
+}
+
+h1  {
+    font-size: 1.7rem;
+}
+
+main > p {
+    margin-bottom: 3.5rem;
+}
+
+h1, main > p, div{
+    text-align: center;
+}
+
+h1, main > p, div, button{
+    color: var(--white);
+}
+
+div {
+    border-radius: 1rem;
+    padding: 1.5rem 3rem;
+    background-color: var(--blue);
+}
+
+div > span {
+    font-weight: 700;
+}
+
+form {
+    border-radius: 0.5rem;
+    padding: 1.3rem;
+    background-color: var(--white);
+}
+
+input {
+    border-radius: 0.25rem;
+    padding: 1rem;
+    border-width: thin;
+    font-family: inherit;
+    border-color: var(--grayish-blue);
+}
+
+input::placeholder{
+    font-weight: 700;
+}
+
+button {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: var(--green);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+form > p {
+    padding: 0 2.5rem;
+    font-size: 0.6rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: var(--grayish-blue);
+}
+
+p > span {
+    color: var(--red);
+    font-weight: 700;
 }
