@@ -47,25 +47,25 @@ section > p {
     margin: 0.8rem 0 2.5rem;
 }
 
-h1, section > p, div{
+h1, section > p, .purpleContainer{
     text-align: center;
 }
 
-h1, section > p, div, button{
+h1, section > p, .purpleContainer, button{
     color: var(--white);
 }
 
-div {
+.purpleContainer {
     border-radius: 1rem;
     padding: 1rem 3rem;
     background-color: var(--blue);
 }
 
-div > span {
+.purpleContainer > span {
     font-weight: 700;
 }
 
-div, form {
+.purpleContainer, form {
     box-shadow: 0px 0.5rem var(--shadow);
 }
 
@@ -74,6 +74,8 @@ form {
     border-radius: 0.5rem;
     padding: 1.3rem;
     background-color: var(--white);
+    gap: 0.5rem;
+
 }
 
 input {
@@ -94,6 +96,15 @@ input::placeholder{
     font-weight: 700;
 }
 
+small {
+    visibility: hidden;
+    font-size: 0.6rem;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--red);
+    align-self: flex-end;
+}
+
 button {
     padding: 1rem;
     border: none;
@@ -102,6 +113,10 @@ button {
     text-transform: uppercase;
     font-weight: 600;
     box-shadow: 0px 4px var(--shadow);
+}
+
+button:hover {
+    background-color: hsl(154, 59%, 70%);
 }
 
 form > p {
@@ -152,6 +167,10 @@ p > span {
 
     form {
         padding: 2.5rem;
+    }
+
+    small {
+        margin-top: 0.3rem;
     }
 
     form > p {

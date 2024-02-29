@@ -22,21 +22,31 @@
         but understanding how developers think is invaluable. </p>
     </section>
     <section class="flex-container">
-      <div><span>Try it free 7 days</span> then $20/mo. thereafter</div>
+      <div class="purpleContainer"><span>Try it free 7 days</span> then $20/mo. thereafter</div>
       <form class="flex-container">
-        <input type="text" placeholder="First Name">
-        <br>
-        <input type="text" placeholder="Last Name">
-        <br>
-        <input type="email" placeholder="Email Address">
-        <br>
-        <input type="password" placeholder="Password">
-        <br>
-        <button type="submit">Claim your free trial </button>
+        <div class="flex-container">
+          <input name="fname" type="text" placeholder="First Name"  id="firstNameInput">
+          <small id="firstNameError">First Name cannot be empty</small>
+        </div>
+        <div class="flex-container">
+          <input name="lname" type="text" placeholder="Last Name" id="lastNameInput">
+          <small id="lastNameError">Last Name cannot be empty</small>
+        </div>
+        <div class="flex-container">
+          <input name="emailAdd" type="email" placeholder="Email Address" id="emailInput">
+          <small id="emailError">Email cannot be empty</small>
+        </div>
+        <div class="flex-container">
+          <input name="pass" type="password" placeholder="Password" id="passwordInput">
+          <small id="passwordError">Password cannot be empty</small>
+        </div>
+
+        <button type="submit" id="submitButton">Claim your free trial </button>
         <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
       </form>
     </section>
   </main>
+  <script src="script.js"></script>
 </body>
 
 </html>
